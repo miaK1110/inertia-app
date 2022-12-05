@@ -15,5 +15,7 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Toppage');
+    return Inertia::render('index',[
+        'name' => 'Mia'
+    ]);
 });
