@@ -60,7 +60,7 @@ const NavBar = () => {
               textDecoration: "none",
             }}
           >
-            The BFR
+            Two Rivers
           </Typography>
 
           <Box
@@ -124,7 +124,7 @@ const NavBar = () => {
               textDecoration: "none",
             }}
           >
-            The BFR
+            Two Rivers
           </Typography>
           <Box
             sx={{

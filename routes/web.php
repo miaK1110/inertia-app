@@ -29,3 +29,7 @@ Route::get('/page2', function () {
         'name' => 'Page2'
     ]);
 });
+
+Route::get('/login', function () {
+    return Inertia::render('login');
+});
