@@ -15,7 +15,17 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('index',[
+    return Inertia::render('index', [
         'name' => 'Mia'
+    ]);
+});
+Route::get('/page1', function () {
+    return Inertia::render('page1', [
+        'name' => 'Page1'
+    ]);
+});
+Route::get('/page2', function () {
+    return Inertia::render('page2', [
+        'name' => 'Page2'
     ]);
 });

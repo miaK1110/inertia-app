@@ -4,19 +4,25 @@ import { createInertiaApp } from "@inertiajs/inertia-react";
 import { InertiaProgress } from "@inertiajs/progress";
 import { resolvePageComponent } from "laravel-vite-plugin/inertia-helpers";
 
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+
 InertiaProgress.init({
-    color: "#ED8936",
-    showSpinner: true,
+  color: "#ED8936",
+  showSpinner: true,
 });
 
 createInertiaApp({
-    title: (title) => `${title} | inertia.app`,
-    resolve: (name) =>
-        resolvePageComponent(
-            `./pages/${name}.tsx`,
-            import.meta.glob("./pages/**/*.tsx")
-        ),
-    setup({ App, props }) {
-        createRoot(document.getElementById("app")!).render(<App {...props} />);
-    },
+  title: (title) => `${title} | The Bennet Family Residence`,
+  resolve: (name) =>
+    resolvePageComponent(
+      `./pages/${name}.tsx`,
+      import.meta.glob("./pages/**/*.tsx")
+    ),
+  setup({ el, App, props }) {
+    const root = createRoot(el);
+    root.render(<App {...props} />);
+  },
 });

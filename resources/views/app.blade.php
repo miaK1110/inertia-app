@@ -9,6 +9,13 @@
     @vite('resources/js/app.tsx')
     @inertiaHead
 </head>
+<style>
+    * {
+        margin: 0;
+        text-decoration: none;
+    }
+
+</style>
 
 <body>
     @inertia
