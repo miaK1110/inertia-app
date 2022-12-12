@@ -10,7 +10,7 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 InertiaProgress.init({
-  color: "#ED8936",
+  color: "#00BCD4",
   showSpinner: true,
 });
 
